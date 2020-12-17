@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project two</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/slider.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    </head>
+    <body>
+        <h2>Photo Composistion Study</h2>
+        <p>When I am looking at a portrait, I want to see a pretty picture. 
+          Like most people I want to see something in front of me and see something pretty, a lovely face, pretty clothes and good lighting. 
+          I wanted to experiment with the ideas of a pretty portrait by cropping portraits finding images and compositions within a larger image.
+           Ones that have interesting negative space, colors and textures within the black and white image. 
+           Focusing on aspects that are found in the ways the shapes interact with the backgrounds or the contrast between a subject’s hair, face, skin, clothes.
+            Including different parts of a portrait to show the interesting parts of an image that would be abstract and not focused on in the image. </p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="crop1.jpg" width="400px">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="crop2.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop3.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop4.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop5.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop5.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop7.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop8.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop9.jpg" width="400px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="crop10.jpg" width="400px">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="crop11.jpg" width="400px">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+              <span class="dot" onclick="currentSlide(10)"></span> 
+              <span class="dot" onclick="currentSlide(11)"></span>  
+            </div>
+        
+        <script src="" async defer></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
+</html>
