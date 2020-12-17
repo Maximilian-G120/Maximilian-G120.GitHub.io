@@ -25,13 +25,13 @@
   content:"";
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/Project_1/background1.jpg);
+  background-image: url(/images/project_1/background1.jpg);
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
-/*   background-color: rgb(91, 61, 126); */
+  background-color: rgb(91, 61, 126);
 }
 
 
