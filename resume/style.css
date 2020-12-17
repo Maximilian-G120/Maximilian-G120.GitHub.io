@@ -9,7 +9,7 @@
 body{
   background-image: url("BacgroundPortfoliositeConcept.svg");
   background-size:cover;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
   /* @media screen and (max-width: 600px) {
   .container {
@@ -42,8 +42,8 @@ body{
       grid-template-areas: 
           "n n"
           "h h"
-          "s e"
-          "s w";
+          "w e"
+          "w s";
       gap: 4m 
   }
   
